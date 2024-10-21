@@ -72,13 +72,15 @@ function App() {
             setContentTopic={setContentTopic}
             methodology={methodology}
             setMethodology={setMethodology}
+        />
+        <Workspace 
+            generatedText={generatedText}
             generateText={generateText}
             updateText={updateText}
             saveToDatabase={saveToDatabase}
             copyToClipboard={copyToClipboard}
             clearAllFields={clearAllFields}
         />
-        <Workspace generatedText={generatedText} />
       </div>
   );
 }
